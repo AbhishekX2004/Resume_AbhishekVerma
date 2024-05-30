@@ -1,0 +1,31 @@
+header{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    border-color: white;   
+}
+
+.projects>li{
+    list-style-type:square;
+}
+
+a{
+    text-decoration: none;
+}
+
+.projects li a svg {
+    color:black
+}
+
