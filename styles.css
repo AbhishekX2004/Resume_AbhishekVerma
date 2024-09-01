@@ -27,10 +27,6 @@ table{
     border-color: white;   
 }
 
-.projects{
-    line-height: 15px;
-}
-
 .projects>li{
     list-style-type:square;
 }
@@ -45,4 +41,9 @@ a{
 
 .projects{
     line-height: 5px;
+    .oneliners{
+        margin: 0;
+        padding-top: 5px;
+        line-height: 11px;
+    }
 }
