@@ -2,7 +2,6 @@ html {
     font-size: small;
 }
 
-
 header{
     justify-content: center;
     align-items: center;
@@ -33,6 +32,7 @@ table{
 
 a{
     text-decoration: none;
+    color:rgba(10, 10, 109, 0.979);
 }
 
 .projects li a svg {
