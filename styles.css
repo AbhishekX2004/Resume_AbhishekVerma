@@ -59,3 +59,14 @@ a{
     margin-left: auto;
     text-align: right;
 }
+
+.edu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.edu-list {
+    padding-bottom: 5px;
+}
