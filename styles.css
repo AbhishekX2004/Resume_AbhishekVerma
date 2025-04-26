@@ -42,10 +42,14 @@ a{
 .projects{
     line-height: 5px;
     .oneliners{
-        margin: 0;
-        padding-top: 5px;
+        margin: 2px;
+        padding-top: 7px;
         line-height: 11px;
     }
+}
+
+.projects li {
+    padding-top: 1px;
 }
 
 .experience-header {
