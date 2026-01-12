@@ -1,0 +1,62 @@
+html {
+    font-size: small;
+}
+
+header{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header h1 {
+    margin: 10px 0;
+}
+
+h2 {
+    margin: 10px 0;
+}
+
+a{
+    text-decoration: none;
+    color:#0a0a6dfa;
+}
+
+.projects li a svg {
+    color:black
+}
+
+.projects{
+    line-height: 1;
+    .oneliners{
+        margin: 0;
+        padding-top: 5px;
+        line-height: 1.1;
+    }
+}
+
+.projects li {
+    /* padding-top: 1px; */
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.date {
+    margin-left: auto;
+    text-align: right;
+}
+
+.edu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.edu-list {
+    padding-bottom: 5px;
+}

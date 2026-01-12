@@ -1,76 +1,115 @@
-html {
-    font-size: small;
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-header{
-    justify-content: center;
-    align-items: center;
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.4;
+    color: #333;
+    background-color: #fff;
+    font-size: 11pt; /* Standard for resumes */
+}
+
+.container {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+/* Header */
+header {
     text-align: center;
+    margin-bottom: 15px;
 }
 
 header h1 {
-    margin: 10px 0;
+    font-size: 24pt;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    color: #000;
 }
 
+.contact-info {
+    font-size: 10pt;
+}
+
+/* Typography */
 h2 {
-    margin: 10px 0;
+    font-size: 14pt;
+    border-bottom: 1px solid #000;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    color: #0a0a6d;
 }
 
-table,th,td{
-    border-bottom: 1px solid black;
-    border-top: 1px solid black;
-    border-collapse: collapse;
-}
-
-table{
-    display : flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center; 
-    border-color: white;   
-}
-
-a{
+a {
     text-decoration: none;
-    color:rgba(10, 10, 109, 0.979);
+    color: #0a0a6d;
 }
 
-.projects li a svg {
-    color:black
+a:hover {
+    text-decoration: underline;
 }
 
-.projects{
-    line-height: 5px;
-    .oneliners{
-        margin: 2px;
-        padding-top: 7px;
-        line-height: 11px;
-    }
+/* Layout Helpers */
+.entry {
+    margin-bottom: 10px;
 }
 
-.projects li {
-    padding-top: 1px;
-}
-
-.experience-header {
+.entry-header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    width: 100%;
+    align-items: baseline;
+}
+
+.entry-subheader {
+    display: flex;
+    justify-content: space-between;
+    font-style: italic;
+    color: #444;
+    font-size: 10.5pt;
 }
 
 .date {
-    margin-left: auto;
-    text-align: right;
+    font-weight: bold;
+    font-size: 10pt;
 }
 
-.edu-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+/* Lists */
+ul {
+    margin-left: 20px;
+    list-style-type: disc;
 }
 
-.edu-list {
-    padding-bottom: 5px;
+.skills-list {
+    list-style-type: none;
+    margin-left: 0;
+}
+
+.skills-list li {
+    margin-bottom: 3px;
+}
+
+.description {
+    margin-top: 2px;
+    font-size: 10.5pt;
+}
+
+.bullet-list li {
+    margin-bottom: 4px;
+}
+
+/* Print Optimization */
+@media print {
+    body {
+        background-color: white;
+    }
+    .container {
+        padding: 20px;
+        width: 100%;
+    }
 }
