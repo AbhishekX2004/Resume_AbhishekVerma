@@ -26,7 +26,7 @@ header {
 }
 
 header h1 {
-    font-size: 24pt;
+    font-size: 20pt;
     text-transform: uppercase;
     margin-bottom: 5px;
     color: #000;
@@ -46,24 +46,55 @@ h2 {
     color: #0a0a6d;
 }
 
+/* Updated Link Styles for Formal Look */
 a {
     text-decoration: none;
-    color: #0a0a6d;
+    color: #222; /* Darker color, nearly black */
+    border-bottom: 1px dotted #888; /* Subtle dotted underline */
+    transition: all 0.2s ease;
 }
 
 a:hover {
+    color: #000;
+    border-bottom: 1px solid #000; /* Solid line on hover */
+    background-color: #f0f0f0; /* Slight highlight on hover for usability */
+}
+
+/* Specific styling for header links to keep them clean */
+header a {
+    border-bottom: none;
+}
+header a:hover {
     text-decoration: underline;
 }
 
 /* Layout Helpers */
 .entry {
-    margin-bottom: 10px;
+    margin-bottom: 12px; /* Slightly increased for breathing room */
 }
 
 .entry-header {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+}
+
+/* New Class for Tech Stack */
+.tech-stack {
+    font-size: 9.5pt;
+    font-family: 'Consolas', 'Courier New', monospace; /* Monospace for technical feel */
+    color: #444;
+    margin-bottom: 2px;
+    background-color: #f9f9f9;
+    padding: 2px 4px;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+.description {
+    margin-top: 3px;
+    font-size: 10.5pt;
+    text-align: justify; /* Keeps paragraphs neat */
 }
 
 .entry-subheader {
@@ -109,7 +140,7 @@ ul {
         background-color: white;
     }
     .container {
-        padding: 20px;
+        padding: 10px;
         width: 100%;
     }
 }
